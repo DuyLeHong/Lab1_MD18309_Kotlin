@@ -15,6 +15,20 @@ fun main () {
 
     val tenSV = "nguyen van long"
     println("In hoa chuoi $tenSV = ${inHoa(tenSV)}")
+
+    val length = tenSV.let {
+        val l = it.length
+        l
+    }
+
+    val a2 = soA.run {
+        val kq = this * 2
+        kq
+    }
+
+    println("A2 = $a2")
+
+    println("Do dai chuoi $tenSV = $length")
 }
 
 val inHoa: (String) -> String = String::uppercase
